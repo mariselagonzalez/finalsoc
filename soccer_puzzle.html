@@ -1,0 +1,155 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Soccer Puzzle Layout</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="row beige">
+			<div class="tinyrow grey center-content">
+				<img src="images/numb3.png" class="restrict-img-size"/>
+			</div>
+			<div class="tinyrow pinkish center-content">
+				<img src="images/numb6.png" class="restrict-img-size"/>
+			</div>
+			<div class="tinyrow brown center-content">
+				<img id="key" src="images/key.png" class="hidekey restrict-img-size grow"></image>
+			</div>
+		</div>
+		<div class="big-box">
+			<div class="6column beige">
+				<div class="numboxes burgundy center-content">
+					<img src="images/numb1.png" class="restrict-img-size"/>
+				</div>	
+				<div class="numboxes burgundy center-content">
+					<img src="images/numb2.png" class="restrict-img-size"/>
+				</div>	
+				<div class="numboxes burgundy center-content">
+					<img src="images/numb3.png" class="restrict-img-size"/>
+				</div>	
+				<div class="numboxes burgundy center-content">
+					<img src="images/numb4.png" class="restrict-img-size"/>
+				</div>	
+			</div>
+			<div class="big-column beige">
+				<div class="row black">
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)"  id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>	
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+				</div>
+				<div class="row purple">
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+
+				</div>
+				<div class="row black">
+						<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<!-- for the "greenImage" what will happen when it's clicked it will play a "goal" sound and also turn the soccer ball into a correct green ball and then a "key" will appear. Which will take you to the next excape room-->
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="greenImage(this)" id="correct"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+				</div>
+				<div class="row purple">
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content"> 
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>					
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+					<div class="smallboxes lightgreen center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+                    </div>
+					<div class="smallboxes vanilla center-content">
+						<img src="images/soccerball.png" class="restrict-img-size grow" onclick="redImage(this)" id="correct1"/>
+					</div>
+				</div>
+			</div>
+			<!-- for the code under here what it's doing is that when a red soccer ball is clicked then the "wrong" audio will play-->
+			<!-- When the correct soccer ball is clicked then the "goal" audio will play letting you know that you have clicked the correct soccer ball-->
+		<audio src="sounds/error.mp3" type="audio/mp3" id="wrong"></audio>
+		<audio src="sounds/cheer.mp3" type="audio/mp3" id="goal"></audio>
+
+ 		<script src="script.js"></script>
+	</body>
+</html>
